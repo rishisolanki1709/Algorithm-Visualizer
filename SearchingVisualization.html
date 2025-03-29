@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Visualizer</title>
+    <link rel="stylesheet" href="style_sv2.css">
+</head>
+<body>
+    <header>
+        <h1>Searching Visualizer</h1>
+    </header>
+    <div id="nav">
+        <div class="button" id="new_array">
+            New Array
+        </div>
+
+        <div class="button , btn" id="linear_search">
+            Linear Search
+        </div>
+        <div class="button , btn" id="binary_search">
+            Binary Search
+        </div>
+
+        <div>
+            <input type="number" id="input-number" min="20" max="500" placeholder="Enter Number (20 - 500)">
+            <div id="msg" style="color: rgb(255, 255, 255);">
+            </div>
+        </div>
+        <!-- ******************************Start Button***************************************** -->
+        <div id="start_searching">Start Searching</div>
+
+    </div>
+
+    <!-- ******************************this is the sorting box ***************************************** -->
+
+    <div id="searching_box"></div>
+
+    <!-- ********************************************************************************************* -->
+
+
+    <!-- ******************************slider************************************* -->
+
+    <div id="bottum">
+
+        <!-- ****************************back button ******************** -->
+        <a id="back" href="javascript:history.back()">&#127968; Back</a>
+
+        <div class="slider">
+            <label for="array_size">Array Size : <span id="size_set">38</span> </label>
+            <input type="range" id="array_size" min="5" max="74">
+        </div>
+
+        <div class="slider">
+            <label for="speed">Sorting Speed : <span id="speed_set">3</span>x</label>
+            <input type="range" name="speed" id="speed" min="1" max="6">
+        </div>
+
+    </div>
+    <script src="script_sv2.js"></script>
+</body>
+</html>
